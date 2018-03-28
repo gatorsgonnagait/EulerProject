@@ -30,3 +30,5 @@ limit = 13
 
 print(largest_products_series(limit, large_number))
 # answer is 23514624000
+
+test = [1, 2, 3, 4]
