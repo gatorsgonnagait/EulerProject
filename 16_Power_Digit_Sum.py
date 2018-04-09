@@ -22,7 +22,7 @@ def double_number_as_string(num):
             int_digit = int_digit % 10
         else:
             carry_over = 0
-        backwards_num_string_new = backwards_num_string_new[:i] + str(int_digit) #+ backwards_num_string[i+1:]
+        backwards_num_string_new = backwards_num_string_new[:i] + str(int_digit) 
     return reverse_string(backwards_num_string_new)
 
 
