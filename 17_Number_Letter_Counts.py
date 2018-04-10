@@ -35,7 +35,7 @@ def digit_string_length(digit):
     }
     return switcher.get(digit)
 
-
+#
 def letter_counter(num): # includes 'and'
     number_length = len(str(num))
     str_num = str(num)
