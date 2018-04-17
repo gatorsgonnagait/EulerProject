@@ -56,7 +56,7 @@ def multiply_two_numbers(num1, num2):
             else:
                 carry_over = 0
             backwards_num_string_new = backwards_num_string_new[:i] + str(int_digit)
-        print(reverse_string(backwards_num_string_new) + '0' * j)
+        #print(reverse_string(backwards_num_string_new) + '0' * j)
         product_lines.append(reverse_string(backwards_num_string_new) + '0' * j)
 
     line_sum = 0
