@@ -36,6 +36,7 @@ if __name__ == '__main__':
             amicable_set.add(amicable_list[0])
             amicable_set.add(amicable_list[1])
 
+
     print(amicable_set)
     print(sum(amicable_set))
     # answer is 31626
