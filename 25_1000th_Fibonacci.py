@@ -20,4 +20,5 @@ def find_nth_digit_length(n):
         i+=1
 
 
+
 print(find_nth_digit_length(1000))
