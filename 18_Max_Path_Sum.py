@@ -3,7 +3,7 @@
 # had to look the good way to this problem. It involves filling out a grid with zeroes, adding them together and seeing which
 # is the greatest sum
 def read_nums():
-    with open('maxPathSum.txt') as file:
+    with open('67_numbers.txt') as file:
         lines = file.readlines()
         list_of_rows = []
         rows = []

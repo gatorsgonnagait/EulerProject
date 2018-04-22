@@ -11,7 +11,6 @@ def get_triangle_number(nth_term):
 def find_num_divisors(num):
     divisor = 1
     num_divisors = 0
-    #if num%2 == 1: # is odd
     while (divisor <= math.sqrt(num)):
         if num%divisor==0:
 
