@@ -11,10 +11,10 @@ def ways_to_change_money_recursion(cents, coin_list, ways):
         if num_coins == 0:
             continue
 
-        if remaining_cents == 0:
+        elif remaining_cents == 0:
             ways+=1
 
-        if remaining_cents >0:
+        elif remaining_cents >0:
             ways = ways_to_change_money_recursion(remaining_cents, coin_list[i + 1:], ways)
 
         if  num_coins > 0 and coin != 1:
