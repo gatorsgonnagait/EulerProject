@@ -30,3 +30,7 @@ def is_prime(num):
 
 def is_even(num):
     return True if num % 2 == 0 else False
+
+def is_pandigital(n, s=9):
+    n=str(n)
+    return len(n)==s and not '1234567890'[:s].strip(n)
