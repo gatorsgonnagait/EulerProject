@@ -13,7 +13,7 @@ def list_pythagorean_triples_given_sum(sum):
     return triple_list
 
 
-limit = 1001
+
 def most_triples_given_sum(limit):
     max_length = 0
     num = 0
@@ -24,4 +24,6 @@ def most_triples_given_sum(limit):
             num = i
     return num
 
+
+limit = 1001
 print(most_triples_given_sum(limit))
