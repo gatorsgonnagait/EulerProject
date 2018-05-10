@@ -34,3 +34,15 @@ def is_even(num):
 def is_pandigital(n, s=9):
     n=str(n)
     return len(n)==s and not '1234567890'[:s].strip(n)
+
+
+def is_pythagorean_triple(num):
+    a = 1
+    while a <= num / 3:
+        b = a + 1
+        while b <= num / 2:
+            if (a * a + b * b == num):
+                return a, b, int(math.sqrt(num))
+            b += 1
+        a += 1
+    return False
