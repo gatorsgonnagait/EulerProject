@@ -42,8 +42,6 @@ for i in range(1, 7):
             prev_total = j -1
 
             print(number_place)
-            print(int(str(int(number))))
-            print(int(str(int(number))[number_place]))
             digit_list.append(int(str(int(number))[number_place]))
 
         count += digit_length
