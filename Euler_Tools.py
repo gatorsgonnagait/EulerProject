@@ -46,3 +46,9 @@ def is_pythagorean_triple(num):
             b += 1
         a += 1
     return False
+
+def multiply_list(list):
+    product = 1
+    for item in list:
+        product *= item
+    return product
