@@ -52,3 +52,11 @@ def multiply_list(list):
     for item in list:
         product *= item
     return product
+
+
+def read_nums(filename):
+    with open(filename+'.txt') as f:
+        return [ c for line in f for c in line.split(',') ]
+
+def value_of_word(str):
+    return sum( [ ord(letter.lower()) - 96 for letter in str] )

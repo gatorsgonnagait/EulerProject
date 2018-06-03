@@ -34,7 +34,6 @@ def ways_to_change_money_dynamic(cents, coin_list):
     ways = [0] * (cents + 1)
     ways[0] = 1
     for i in range(len(coin_list)):
-
         j = coin_list[i]
         while j <= cents:
 
@@ -45,7 +44,7 @@ def ways_to_change_money_dynamic(cents, coin_list):
 
 
 
-cents = 200
+cents = 100
 
 coin_list_us_1 = [50,25, 10, 5, 1]
 coin_list_uk_1 = [200, 100, 50, 20, 10, 5, 2, 1]
@@ -54,5 +53,5 @@ coin_list_us_2 = [1, 5, 10, 25, 50]
 coin_list_uk_2 = [1, 2, 5, 10, 20, 50, 100, 200]
 
 
-print(ways_to_change_money_recursion(cents, coin_list_uk_1, 0))
-print(ways_to_change_money_dynamic(cents, coin_list_uk_2))
+print(ways_to_change_money_recursion(cents, coin_list_us_1, 0))
+print(ways_to_change_money_dynamic(cents, coin_list_us_2))
