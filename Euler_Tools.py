@@ -1,4 +1,4 @@
-import math
+import math, itertools
 
 def is_palidrome(number):
     i = 0
@@ -60,3 +60,28 @@ def read_nums(filename):
 
 def value_of_word(str):
     return sum( [ ord(letter.lower()) - 96 for letter in str] )
+
+def generate_pandigital_list(number):
+
+    digit_set = set(itertools.permutations(str(number)))
+    digit_list = []
+    for num in digit_set:
+        num_str = ''
+        for digit in num:
+            num_str += digit
+
+        digit_list.append(num_str)
+
+    return digit_list
+
+
+def pandigital_number(n, zero):
+    digit = ''
+    if zero:
+        one = 1
+    else:
+        one = 0
+    for i in range(n , 0-one, -1):
+        digit += str(i)
+
+    return digit

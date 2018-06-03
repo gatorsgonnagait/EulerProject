@@ -8,9 +8,13 @@ def triangle_number_set(n):
     return list
 
 word_list = read_nums('common_words')
-triangle_set = triangle_number_set(100)
-triangle_word_count = 0
 
+
+
+
+triangle_set = triangle_number_set(100)
+
+triangle_word_count = 0
 for word in word_list:
 
     if value_of_word(word[1:-1]) in triangle_set:
