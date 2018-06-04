@@ -85,3 +85,14 @@ def pandigital_number(n, zero):
         digit += str(i)
 
     return digit
+
+
+def permutate(seq):
+    if not seq:
+        return [seq]
+
+    temporary = []
+    for i in range(len(seq)):
+        for j in permutate(seq[: i] + seq[i + 1:]):
+            temporary.append(seq[i: i + 1] + j)
+    return temporary
